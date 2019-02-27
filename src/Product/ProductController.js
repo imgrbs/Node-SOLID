@@ -1,11 +1,11 @@
 class ProductController {
-    getProducts(req, res) {
-        return res.json(global.productService.getProducts());
+    async getProducts(req, res) {
+        return res.json(await global.productService.getProducts());
     }
 
-    getProductById(req, res) {
+    async getProductById(req, res) {
         const productId = parseInt(req.params.id);
-        return res.json(global.productService.getProductById(productId));
+        return res.json(await global.productService.getProductById(productId));
     }
 }
 

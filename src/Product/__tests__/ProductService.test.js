@@ -1,17 +1,12 @@
-import Product from '../Product';
 import ProductService from '../ProductService';
-import ProductRepository from '../ProductRepository';
+import StubProductRepository from '../__stubs__/StubProductRepository';
 
 
 describe('> Test ProductService', () => {
     let productService;
 
     beforeEach(() => {
-        let products = [];
-        products.push(new Product('Chocolate', 20));
-        products.push(new Product('Beer', 20));
-        products.push(new Product('Pocky', 20));
-        const productRepository = new ProductRepository(products);
+        const productRepository = new StubProductRepository();
         productService = new ProductService(productRepository);
     });
 
