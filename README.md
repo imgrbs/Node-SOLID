@@ -3,6 +3,8 @@
 This repository is about `proof of concept (POC)` in these conditions.
 1. How to write code in node.js structure with testable
 2. SOLID
+3. Controller, Service, Repository and Model are `Single Responsibility`.
+4. Testable in `Service` file.
 
 more detail about solid : https://en.wikipedia.org/wiki/SOLID
 
@@ -21,7 +23,7 @@ more detail about solid : https://en.wikipedia.org/wiki/SOLID
 ## Run !
 1. Test with jest by using command `npm run test` or `yarn test`
 2. Running Server by using command `npm run start` or `yarn start`
-3. You can see an example data at http://localhost:3001/products
+3. You can see an example data at Rhttp://localhost:3001/products
 
 ## Contributing
 @imgrbs
